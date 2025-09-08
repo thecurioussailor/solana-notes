@@ -1,1 +1,14 @@
+```import bs58 from "bs58";
 
+// Phantom private key (base58 string)
+const base58PrivateKey = "your_phantom_private_key_here";
+
+// Decode base58 into bytes
+const secretKey = bs58.decode(base58PrivateKey);
+
+// Print Solana CLI JSON format
+console.log(`[${secretKey.toString()}]`);
+```
+
+solana config get
+solana config set --keypair ~/.config/solana/mainnet.json
